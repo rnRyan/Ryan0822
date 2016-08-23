@@ -123,6 +123,14 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyMapViewController.cs" />
+    <Compile Include="MyMapViewController.designer.cs">
+      <DependentUpon>MyMapViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyWebViewController.cs" />
+    <Compile Include="MyWebViewController.designer.cs">
+      <DependentUpon>MyWebViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="json.net">

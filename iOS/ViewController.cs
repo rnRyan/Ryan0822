@@ -6,8 +6,7 @@ namespace rnApp.iOS
 {
 	public partial class ViewController : UIViewController
 	{
-		int count = 1;
-
+		
 		public ViewController(IntPtr handle) : base(handle)
 		{
 		}
@@ -16,19 +15,32 @@ namespace rnApp.iOS
 		{
 			base.ViewDidLoad();
 
-			// Perform any additional setup after loading the view, typically from a nib.
-			Button.AccessibilityIdentifier = "myButton";
-			Button.TouchUpInside += delegate
+
+			btnConfirm.TouchUpInside += (sender, e) =>
 			{
-				var title = string.Format("{0} clicks!", count++);
-				Button.SetTitle(title, UIControlState.Normal);
+				PerformSegue("MoveToMap", this);
 			};
+
+			Button.TouchUpInside += (sender, e) =>
+			{
+				PerformSegue("MoveToWeb", this);
+			};
+		}
+
+		public override void ViewWillAppear(bool animated)
+		{
+			base.ViewWillAppear(animated);
 		}
 
 		public override void DidReceiveMemoryWarning()
 		{
 			base.DidReceiveMemoryWarning();
 			// Release any cached data, images, etc that aren't in use.		
+		}
+
+		public override void PrepareForSegue(UIStoryboardSegue segue, Foundation.NSObject sender)
+		{
+			base.PrepareForSegue(segue, sender);
 		}
 	}
 }
