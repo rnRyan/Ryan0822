@@ -4,6 +4,8 @@ using System.Diagnostics;
 using Foundation;
 using UIKit;
 
+using Debug = System.Diagnostics.Debug;
+
 namespace rnApp.iOS
 {
 	public partial class MyTableViewController : UIViewController
@@ -26,10 +28,10 @@ namespace rnApp.iOS
 		{
 			var list = new List<Todo>();
 
-			list.Add(new Todo { Name = "123", Description = "" });
-			list.Add(new Todo { Name = "456", Description = "" });
-			list.Add(new Todo { Name = "789", Description = "" });
-			list.Add(new Todo { Name = "101", Description = "" });
+			list.Add(new Todo { Name = "瞭解IOC", Description = "控制反轉" });
+			list.Add(new Todo { Name = "瞭解DI", Description = "依賴注入" });
+			list.Add(new Todo { Name = "瞭解 UI TEST", Description = "準備" });
+			list.Add(new Todo { Name = "瞭解 Unit TEST", Description = "準備" });
 
 			var todoSource = new TodoSource(list);
 			//將資料指派給tableView

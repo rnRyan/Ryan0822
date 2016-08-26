@@ -142,11 +142,11 @@ namespace rnApp.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060006
-			public const int btn_Go = 2131099654;
+			// aapt resource value: 0x7f06000a
+			public const int btn_Go = 2131099658;
 			
-			// aapt resource value: 0x7f060007
-			public const int edit_webURL = 2131099655;
+			// aapt resource value: 0x7f06000b
+			public const int edit_webURL = 2131099659;
 			
 			// aapt resource value: 0x7f060002
 			public const int loadingImage = 2131099650;
@@ -163,8 +163,20 @@ namespace rnApp.Droid
 			// aapt resource value: 0x7f060005
 			public const int main_menuview_btnWeb = 2131099653;
 			
+			// aapt resource value: 0x7f060006
+			public const int main_menuview_btntableview = 2131099654;
+			
+			// aapt resource value: 0x7f06000c
+			public const int mywebview = 2131099660;
+			
+			// aapt resource value: 0x7f060007
+			public const int table_listview = 2131099655;
+			
+			// aapt resource value: 0x7f060009
+			public const int table_mylistview_cell_description = 2131099657;
+			
 			// aapt resource value: 0x7f060008
-			public const int mywebview = 2131099656;
+			public const int table_mylistview_cell_name = 2131099656;
 			
 			// aapt resource value: 0x7f060001
 			public const int textViewStatus = 2131099649;
@@ -195,7 +207,13 @@ namespace rnApp.Droid
 			public const int Main = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int web_mywebview = 2130968580;
+			public const int table_myListView = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int table_view_cell = 2130968581;
+			
+			// aapt resource value: 0x7f040006
+			public const int web_mywebview = 2130968582;
 			
 			static Layout()
 			{

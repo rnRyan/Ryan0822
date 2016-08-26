@@ -22,4 +22,14 @@
         android:layout_marginTop="75dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TableView"
+        android:id="@+id/main_menuview_btntableview"
+        android:layout_below="@+id/main_menuview_btnWeb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
 </RelativeLayout>

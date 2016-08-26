@@ -38,6 +38,12 @@ namespace rnApp.Droid
 
 				StartActivity(intent);
 			};
+
+			var btnTable = FindViewById<Button>(Resource.Id.main_menuview_btntableview);
+			btnTable.Click += (sender, e) =>
+			{
+				StartActivity(typeof(MyListViewActivity));
+			};
 		}
 	}
 }
