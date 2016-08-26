@@ -25,6 +25,11 @@ namespace rnApp.iOS
 			{
 				PerformSegue("MoveToWeb", this);
 			};
+
+			_btnGoTableView.TouchUpInside += (sender, e) =>
+			{
+				PerformSegue("MoveToTableView", this);
+			};
 		}
 
 		public override void ViewWillAppear(bool animated)

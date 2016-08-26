@@ -16,6 +16,9 @@ namespace rnApp.iOS
 		UIKit.UIButton btnGo { get; set; }
 
 		[Outlet]
+		UIKit.NSLayoutConstraint btnGoButtonConstraint { get; set; }
+
+		[Outlet]
 		UIKit.UITextField txtURL { get; set; }
 
 		[Outlet]
@@ -26,6 +29,11 @@ namespace rnApp.iOS
 			if (btnGo != null) {
 				btnGo.Dispose ();
 				btnGo = null;
+			}
+
+			if (btnGoButtonConstraint != null) {
+				btnGoButtonConstraint.Dispose ();
+				btnGoButtonConstraint = null;
 			}
 
 			if (txtURL != null) {

@@ -13,6 +13,9 @@ namespace rnApp.iOS
 	partial class ViewController
 	{
 		[Outlet]
+		UIKit.UIButton _btnGoTableView { get; set; }
+
+		[Outlet]
 		UIKit.UIButton btnConfirm { get; set; }
 
 		[Outlet]
@@ -20,6 +23,11 @@ namespace rnApp.iOS
 		
 		void ReleaseDesignerOutlets ()
 		{
+			if (_btnGoTableView != null) {
+				_btnGoTableView.Dispose ();
+				_btnGoTableView = null;
+			}
+
 			if (btnConfirm != null) {
 				btnConfirm.Dispose ();
 				btnConfirm = null;
